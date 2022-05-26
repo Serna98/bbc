@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Radio+Canada&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - BBC News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bbc">
+        <section class="bbc-header">
+            <div class="bbc-header_logo">
+                <img src="images/logo_bbc.svg">
+            </div>
+            <div class="bbc-header_signin">
+                <img class="bbc-logo" src="images/account.png">
+            </div>
+            <div class="bbc-header_menu">
+                <select>
+                    <option default value="menu">Menu</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div class="bbc-header_search">
+                <img class="bbc-logo small" src="images/search.png">
+            </div>
+        </section>
+        <section class="bbc-news">
+            <div class="bbc-news_logo">
+                <p>NEWS</p>
+            </div>
+            <div class="bbc-news_hamburger">
+                <p class="bbc-news_icon"></p>
+            </div>
+        </section>
+        <section class="bbc-stories">
+            <div class="bbc-stories_tab active">
+                <p>Latest Stories</p>
+            </div>
+            <div class="bbc-stories_tab">
+                <p>Most Read</p>
+            </div>
+        </section>
+        <section class="bbc-content">
+            <div>
+                <img class="bbc-content_image" src="images/chikadance.gif">
+            </div>
+            <div class="bbc-content_title">
+                <p><img class="bbc-content_title-image"src="images/dot.png"><span style="color: red">LIVE</span> Chika oficially announced best waifu, scoring higher than Hayasaka Ai</p>
+            </div>
+            <div class="bbc-content_text">
+                <p>“It’s no fair to have girls’ talk without me! Please leave an issue like that to Love Detective Chika!” – Chika Fujiwara.</p>
+            </div>
+            <div class="bbc-content_country">
+                <p>Japan</p>
+            </div>
+            <div class="bbc-content_othernews">
+                <ul>
+                    <li>Kaguya-sama: Love Is War -Ultra Romantic- Coming April 2022</li>
+                    <li>Kaguya-sama: Love is War -Ultra Romantic- starts streaming April 8, 2022 on Crunchyroll and Funimation!</li>
+                    <li>Kaguya-sama: Love is War? English Dub Cast Announced!</li>
+                </ul>
+            </div>
+        </section>
+        <section class="bbc-more">
+            <div class="bbc-more_1">
+                <img class="bbc-more_1-image" src="images/bigfan.jpg">
+                <div class="bbc-more_1-text">
+                    <h3>The student souncil wants to move forward</h3>
+                    <div class="bbc-more_1-text-sub">
+                            <img class="bbc-more_1-text-clock" src="images/clock.png">
+                            <p class="bbc-more_1-text-border">18h</p>
+                            <p>Asia</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="bbc-more_1">
+                <img class="bbc-more_1-image" src="images/chikapress.jpg">
+                <div class="bbc-more_1-text">
+                    <h3>Miyuki Shirogane wants to mediate, Kaguya distracts him</h3>
+                    <div class="bbc-more_1-text-sub">
+                            <img class="bbc-more_1-text-clock" src="images/clock.png">
+                            <p class="bbc-more_1-text-border">14h</p>
+                            <p>Asia</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="bbc-more_1">
+                <img class="bbc-more_1-image" src="images/Awwwwwww.jpg">
+                <div class="bbc-more_1-text">
+                    <h3>Nagisa Kashiwagi wants to kill, Maki Shijo wants to take action</h3>
+                    <div class="bbc-more_1-text-sub">
+                            <img class="bbc-more_1-text-clock" src="images/clock.png">
+                            <p class="bbc-more_1-text-border">23h</p>
+                            <p>Asia</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="bbc-more_1">
+                <img class="bbc-more_1-image" src="images/chikaangryjpg.jpg">
+                <div class="bbc-more_1-text">
+                    <h3>Miyuki Shirogane wants to be believed</h3>
+                    <div class="bbc-more_1-text-sub">
+                            <img class="bbc-more_1-text-clock" src="images/clock.png">
+                            <p class="bbc-more_1-text-border">8h</p>
+                            <p>Asia</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+</body>
+<script>
+    $(".bbc-stories_tab").click(function(e){
+        console.log(e.currentTarget)
+        $(".bbc-stories_tab").removeClass("active")
+        $(e.currentTarget).addClass("active")
+    })
+</script>
+</html>

@@ -1,0 +1,249 @@
+/* General */
+* {
+    margin:0;
+    padding:0;
+}
+:root{
+    --Primary: black;
+    --Secondary: white;
+    --Theme: #B80000;
+}
+
+/* Main */
+.bbc {
+}
+
+/* Header */
+.bbc-header {
+    display: grid;
+    grid-template-columns: 100px 40px auto 40px;
+    background-color: var(--Secondary);
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+/* Header: Logo */
+.bbc-header_logo {
+    position: relative;
+    padding: 10px 0px 5px 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.bbc-header > div::after {
+    position: absolute;
+    content: "";
+    border-right: 1px solid rgb(201, 199, 199);
+    height:100%;
+    right: 0;
+    bottom: 0;
+}
+.bbc-header > div:last-child::after {
+    display:none;
+}
+.bbc-header_logo > img {
+    height: auto;
+    width: 80px;
+}
+/* Header: Signin */
+.bbc-header_signin {
+    position: relative;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bbc-logo {
+    width: 25px;
+    height: auto;
+}
+.bbc-logo.small {
+    width: 17px;
+    height: auto;
+}
+/* Header: Menu */
+.bbc-header_menu {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bbc-header_menu > select {
+    width: 100%;
+    height: 100%;
+    border:none;
+    font-family: 'Radio Canada', sans-serif;
+    font-weight: bold;
+}
+/* Header: Search */
+.bbc-header_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* News: Header */
+.bbc-news {
+    display: flex;
+    background-color: var(--Theme);
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d84444;
+    font-family: 'Radio Canada', sans-serif;
+}
+.bbc-news_logo {
+    font-size: 35px;
+    padding: 0 15px;
+    color:white;
+    font-weight: bold;
+}
+.bbc-news_hamburger {
+    padding-right: 40px;
+    width: 17px;
+    height: auto;
+}
+.bbc-news_icon {
+    width:20px;
+    height:15px;
+    display:block;
+    border:none;
+    margin:20px;
+    background: linear-gradient(
+      to bottom, 
+      white, white 20%, 
+      #3d0e6100 20%, #3d0e6100 40%, 
+      white 40%, white 60%, 
+      #3d0e6100 60%, #3d0e6100 80%, 
+      white 80%, white 100%);
+}
+
+/* News: Stories */
+.bbc-stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--Theme);
+    width: 100%;
+    height: 40px;
+    font-family: 'Radio Canada', sans-serif;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    justify-items: center;
+    align-items: center;
+}
+.bbc-stories_tab {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+.bbc-stories_tab.active {
+    background-color: #990000;
+    text-decoration: underline;
+}
+
+/* News: Content */
+.bbc-content {
+    display: flex;
+    padding: 20px 20px 5px 20px;
+    background-color: var(--Secondary);
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 20px;
+    justify-items: start;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.bbc-content_image {
+    width:100%;
+    height:auto;
+    display:block;
+}
+.bbc-content_title {
+    font-weight: bold;
+}
+.bbc-content_title-image {
+    width: 20px;
+    height:auto;
+    padding: 5px 5px 0px 0px;
+}
+.bbc-content_text {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.bbc-content_country {
+    font-size: 14px;
+    margin: 5px 0px;
+}
+.bbc-content_othernews {
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+.bbc-content_othernews ul{
+    margin: 0px 15px;
+}
+.bbc-content_othernews ul li {
+    margin: 5px 0px;
+}
+.bbc-more {
+    font-family: 'Radio Canada', sans-serif;
+    padding: 10px 20px;
+}
+.bbc-more_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: justify;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid rgb(201, 200, 200);
+}
+.bbc-more_1-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bbc-more_1-text {
+    margin-left: 5px;
+    display: grid;
+    align-items: stretch;
+    height: 100%;
+}
+.bbc-more_1-text-clock {
+    width: 20px;
+    height: auto;
+    position: relative;
+}
+
+.bbc-more_1-text-sub {
+    display:grid;
+    grid-template-columns: 25px 40px auto;
+    justify-items:start;
+    margin-top: 20px;
+    font-size: 14px;
+    color:gray;
+    align-items: center;
+}
+
+.bbc-more_1-text-border {
+    border-right: 1px solid rgb(186, 185, 185);
+    width:80%;
+}
+/* IPAD */
+@media screen and (min-width: 600px) {
+    .bbc-news {
+        background-color: green;
+    }
+    .bbc-content {
+        max-width: 700px;
+        margin: auto;
+    }
+}
